@@ -5,7 +5,7 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Cliente cliente1 = new Cliente("Jamesson Alberto", "622.419.093-35", "(85)99291-0660");
+		Cliente cliente1 = new Cliente("Jamesson Alberto", "000.000.000-00", "(85)99999-9999");
 		Conta conta1 = new Conta(1010, cliente1 ); 
 		
 		Scanner sc = new Scanner (System.in);
