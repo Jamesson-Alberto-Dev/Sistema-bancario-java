@@ -5,12 +5,28 @@ public class Main {
 
 	public static void main(String[] args) {
 		
-		Cliente cliente1 = new Cliente("Jamesson Alberto", "622.419.093-35", "(85)99291-0660");
+	
+		Scanner sc = new Scanner (System.in);
+		System.out.println("\n=======================");
+		System.out.println("BEM-VINDO AO JAMES BANK!");
+		System.out.println("=======================\n");
+		
+		System.out.print("> Digite seu nome: ");
+		String nome = sc.nextLine();
+		
+		System.out.print("> Digite seu CPF: ");
+		String cpf = sc.nextLine();
+		
+		System.out.print("> Digite seu numero de telefone: ");
+		String telefone = sc.nextLine();
+		
+		//CADASTRO DA CONTA 
+		Cliente cliente1 = new Cliente(nome, cpf, telefone);
 		Conta conta1 = new Conta(1010, cliente1 ); 
 		
-		Scanner sc = new Scanner (System.in);
-		int opcao = 0;
+		System.out.println("\n#### Conta de [" +cliente1.nome+ "] cadastrada com sucesso!!!\n");
 		
+		int opcao = 0;
 	while (opcao != 5) {
 		System.out.println("\n---- SISTEMA BANCARIO ----");
 		System.out.println("[1] - Depositar");
@@ -20,17 +36,20 @@ public class Main {
 		System.out.println("[5] - Sair da Conta");
 		System.out.println("-----------------------------");
 		System.out.print("Escolha sua opção: ");
-		
 		opcao = sc.nextInt(); //ler a opçao digitada
 		
 		switch (opcao) {
 			case 1:
+				System.out.println("\nSaldo disponível: R$" + conta1.getSaldo());
+				System.out.println("----------------------------");
 				System.out.print("Digite o valor para depósito: R$");
 				double valorDep = sc.nextDouble();
 				conta1.depositar(valorDep);
 				break;
 				
 			case 2:
+				System.out.println("\nSaldo disponível: R$" + conta1.getSaldo());
+				System.out.println("----------------------------");
 				System.out.print("Digite o valor para saque: R$");
 				double valorSaq = sc.nextDouble();
 				conta1.sacar(valorSaq);
@@ -53,9 +72,9 @@ public class Main {
 				System.out.println("Opção Invalida");
 			}
 	
-		
 		}
 	sc.close();
+	
 	}
 
 }
