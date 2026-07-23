@@ -23,8 +23,8 @@ public class Main {
 		//CADASTRO DA CONTA 
 		Cliente cliente1 = new Cliente(nome, cpf, telefone);
 		Conta conta1 = new Conta(1010, cliente1 ); 
-		
-		System.out.println("\n#### Conta de [" +cliente1.nome+ "] cadastrada com sucesso!!!\n");
+	
+		System.out.println("\n#### Conta de [" +cliente1.getNome()+ "] cadastrada com sucesso!!!\n");
 		
 		int opcao = 0;
 	while (opcao != 5) {

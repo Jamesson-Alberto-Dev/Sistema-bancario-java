@@ -77,7 +77,7 @@ public class Conta  {
 		System.out.println("Banco: JAMES BANK ");
 		System.out.println("Agência: " +this.getAgencia());
 		System.out.println("----------------------------------");
-		System.out.println(" M O V I M E N T A Ç Õ E S ");
+		System.out.println(" \n M O V I M E N T A Ç Õ E S\n ");
 		// Verifica se a Lista está vazia
 		if (this.historico.isEmpty()) {
 			System.out.println("Nenhuma transação realizada.");
@@ -92,7 +92,7 @@ public class Conta  {
 		
 		System.out.println("----------------------------------\n");
 		System.out.println("SALDO ATUAL:                 R$"+this.getSaldo());	
-		System.out.println("----------------------------------\n");
+		System.out.println("----------------------------------");
 		System.out.println("==================================");
 	}
 	
