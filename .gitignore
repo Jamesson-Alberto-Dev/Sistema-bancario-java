@@ -1,1 +1,10 @@
 /bin/
+#INTELLIJ
+.idea/
+*.iml
+
+
+#ECLIPSE
+.settings/
+.classpath
+.project
