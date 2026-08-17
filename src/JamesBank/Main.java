@@ -1,7 +1,6 @@
 package JamesBank;
 import java.util.Scanner;
 
-
 public class Main {
 
 	public static void main(String[] args) {
@@ -10,7 +9,7 @@ public class Main {
 		
 		Scanner sc = new Scanner (System.in);
 		System.out.println("\n=======================");
-		System.out.println("BEM-VINDO AO JAMES BANK!");
+		System.out.println("BEM-VINDO(A) AO JAMES BANK!");
 		System.out.println("=======================\n");
 		
 		
